@@ -1,0 +1,137 @@
+.mainDiv1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(25, 25, 25, 0.95);
+  color: white;
+  width: 650px;
+  height: 470px;
+  border-radius: 1em;
+  margin-top: 50px;
+  padding: 30px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.button {
+  margin-left: 150px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.mainDiv {
+  background-color: rgb(28, 27, 27);
+  color: white;
+  height: 260px;
+  width: 400px;
+  border-radius: 2em;
+  margin-top: 180px;
+}
+
+.addbutton {
+  height: 40px;
+  border-radius: 0.5em;
+  width: 80px;
+  margin-top: 10px;
+  margin-left: 370px;
+}
+
+.submitbutton {
+  height: 40px;
+  border-radius: 0.5em;
+  width: 80px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.datediv {
+  margin-top: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 0.5em;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+.datee {
+  background-color: rgb(23, 22, 22);
+  width: 400px;
+  height: 390px;
+  color: white;
+  position: relative;
+  border-radius: 0.5em;
+  box-shadow: 0 0.188em 1.550em; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: space-around;
+  margin-left: 70px;
+  margin-top: 100px;
+  font-size: 0.99em;
+}
+
+.options {
+  font-size: 0.99em;
+
+}
+
+.bookName {
+  font-size: 25px;
+  color: #434242;
+}
+
+input {
+  border: none;
+  border: none;
+  border-radius: 2em;
+  background-color: rgb(229, 226, 226);
+  width: 50%;
+  height: 10px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 2em;
+  font-size: 0.65em;
+}
+
+input:focus {
+  outline-color: rgb(32, 177, 255);
+}
+
+#lateFee {
+  height: 40px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.form-control {
+  height: 40px;
+  width:30px;
+}
+
+.Addbutton {
+  height: 50px;
+  background-color: #e1ebee;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  float: right;
+  font-weight: bold;
+  font-size: 22px;
+}
