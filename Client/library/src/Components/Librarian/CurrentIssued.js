@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import { returnBookPost } from '../../Services/ReturnDataService';
 import {
   MDBTable,
@@ -49,17 +48,17 @@ function CurrentIssued() {
     <div>
       <div class="table-responsive">
         <MDBTypography tag='h4' style={{ textAlign: "center", marginTop: "20px" }}>Currently Issued Book List</MDBTypography>
-        <MDBTable striped hover w-auto style={{ borderRadius: "7px", width: "980px", marginTop: "50px", marginLeft: "150px", boxShadow: '2px 2px 2px #9a9a9a' }}>
+        <MDBTable striped hover w-auto style={{ borderRadius: "7px", width: "1000px", marginTop: "50px", marginLeft: "10px", boxShadow: '2px 2px 2px #9a9a9a' }}>
 
           <MDBTableHead>
             <tr>
-              <th scope='col'>Book No.</th>
-              <th scope='col'>Book Name</th>
-              <th scope='col'>Book holders Name</th>
-              <th scope='col'>User Category</th>
-              <th scope='col'>Issued Date</th>
-              <th scope='col'>Expected Return Date</th>
-              <th scope='col'>Action</th>
+              <th scope='col'style={{width:'500px'}}>Book No.</th>
+              <th scope='col'style={{width:'500px'}}>Book Name</th>
+              <th scope='col'style={{width:'1100px'}}>Book holders Name</th>
+              <th scope='col'style={{width:'500px'}}>User Category</th>
+              <th scope='col'style={{width:'500px'}}>Issued Date</th>
+              <th scope='col'style={{width:'1100px'}}>Expected Return Date</th>
+              <th scope='col'style={{width:'500px'}}>Action</th>
             </tr>
           </MDBTableHead>
           <MDBTableBody>

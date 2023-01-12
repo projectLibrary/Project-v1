@@ -37,17 +37,17 @@ function Issued() {
     <div>
       <div class="table-responsive">
         <MDBTypography tag='h4' style={{ textAlign: "center", marginTop: "20px" }}>Issued Book List</MDBTypography>
-        <MDBTable striped hover w-auto style={{ borderRadius: "7px", width: "980px", marginTop: "50px", marginLeft: "150px", boxShadow: '2px 2px 2px #9a9a9a' }}>
+        <MDBTable striped hover w-auto style={{ borderRadius: "7px", width: "1000px", marginTop: "50px", marginLeft: "10px", boxShadow: '2px 2px 2px #9a9a9a' }}>
 
           <MDBTableHead>
             <tr>
-              <th scope='col'>BookId</th>
-              <th scope='col'>Book Name</th>
-              <th scope='col'>Book holders Name</th>
-              <th scope='col'>User Category</th>
-              <th scope='col'>Issued Date</th>
-              <th scope='col'>Expected Return Date</th>
-              <th scope='col'>Return Date</th>
+              <th scope='col'style={{width:'500px'}}>BookId</th>
+              <th scope='col'style={{width:'1000px'}}>Book Name</th>
+              <th scope='col'style={{width:'1500px'}}>Book holders Name</th>
+              <th scope='col'style={{width:'1000px'}}>User Category</th>
+              <th scope='col'style={{width:'1000px'}}>Issued Date</th>
+              <th scope='col'style={{width:'1500px'}}>Expected Return Date</th>
+              <th scope='col'style={{width:'1000px'}}>Return Date</th>
 
             </tr>
           </MDBTableHead>

@@ -1,8 +1,6 @@
-
 import React from "react";
 import {useState, useEffect} from 'react'
-
-import { getUserProfile } from '../Services/ProfileService'
+import { getUserProfile } from '../../Services/ProfileService'
 
 // reactstrap components
 import {
@@ -36,10 +34,10 @@ function User() {
       <div className="content">
         <Row>
          
-          <Col md="8">
+          <Col md="20">
             <Card className="card-user">
-              <CardHeader>
-                <CardTitle tag="h5">Profile</CardTitle>
+              <CardHeader style={{backgroundColor:"black"}}>
+                <CardTitle tag="h5" style={{color:"White"}}>Profile</CardTitle>
               </CardHeader>
               <CardBody>
                 <Form>
@@ -103,12 +101,6 @@ function User() {
                  
                   <Row>
                     <div className="update ml-auto mr-auto">
-                      {/* <Button
-                        className="btn-round"
-                        color="primary"
-                        type="submit" >
-                        Update Profile
-                      </Button> */}
                     </div>
                   </Row>
                 </Form>

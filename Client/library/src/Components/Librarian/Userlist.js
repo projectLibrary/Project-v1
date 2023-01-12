@@ -41,16 +41,16 @@ function Users() {
     return (
         <div className='user-list'>
             <MDBTypography tag='h4' style={{ textAlign: "center" }}>Users List</MDBTypography>
-            <MDBTable striped hover style={{ borderRadius: "7px", width: "660px", boxShadow: '2px 2px 2px #9a9a9a' }}>
+            <MDBTable striped hover style={{ borderRadius: "7px", width: "1000pxpx", boxShadow: '2px 2px 2px #9a9a9a' }}>
 
                 <MDBTableHead>
                     <tr>
-                        <th scope='col'>Id</th>
-                        <th scope='col'>First Name</th>
-                        <th scope='col'>Last Name</th>
-                        <th scope='col'>Email</th>
-                        <th scope='col'>Phone</th>
-                        <th scope='col'>Address</th>
+                        <th scope='col'style={{width:'500px'}}>Id</th>
+                        <th scope='col'style={{width:'1000px'}}>First Name</th>
+                        <th scope='col'style={{width:'1000px'}}>Last Name</th>
+                        <th scope='col'style={{width:'1000px'}}>Email</th>
+                        <th scope='col'style={{width:'1000px'}}>Phone</th>
+                        <th scope='col'style={{width:'1000px'}}>Address</th>
 
                     </tr>
                 </MDBTableHead>

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import LibrarianApp from '../src/Components/Librarian/LibrarianApp';
+import UserApp from '../src/Components/User/UserApp';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Books from './Components/Librarian/Books';
@@ -15,6 +16,12 @@ import Return from './Components/Librarian/Return';
 import Latefee from './Components/Librarian/Latefee';
 import Login from './Components/Public/login/login';
 import Register from './Components/Public/register/register';
+import Dashboard from './Components/User/Dashboard';
+import BookDetails from './Components/User/BookDetails';
+import UserProfile from './Components/User/UserProfile';
+import FeedBack from './Components/User/Feedback';
+import BookHistory from './Components/User/BookHistory';
+
 
 
 const router = createBrowserRouter([
@@ -33,6 +40,15 @@ const router = createBrowserRouter([
       
     ]
   },
+  {
+    path: "/user", element: <UserApp/>, children: [
+      { path: "/user/bookIndex", element: <Dashboard/> },
+      { path: "/user/applyBook/:id", element: <BookDetails/>},
+      { path: "/user/profile", element: <UserProfile/>},
+      { path: "/user/myBook", element: <BookHistory/>},
+      { path: "/user/feedback", element: <FeedBack/>},
+    ]
+ },
   {path: '/login', element: <Login/>},
   {path: '/register', element: <Register/>},
 ]);
@@ -44,7 +60,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

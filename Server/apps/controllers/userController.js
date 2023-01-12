@@ -9,6 +9,7 @@ const { Feedback } = require('../../data/models');
 
 //get all avilable books from
 getAllBooks = async (req, res) => {
+    console.log('getting all books')
     const availability = "Available"
     const books = await Books.findAll({
         where:{availability: availability}

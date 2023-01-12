@@ -77,9 +77,10 @@ const loginUser = async (req, res) => {
     where: {
       email: email,
       password: password,
-      otp: otp
+      // otp: otp
     },
   });
+console.log(user)
   if (!user) {
     return res.json(new ResponseModel(null, null, ["No user with the given details found"]));
   }

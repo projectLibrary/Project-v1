@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./login.css";
 import { Alert } from 'react-bootstrap'
-function Login() {
+function  Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
   const [otp, setOtp] = useState("");
@@ -18,12 +18,12 @@ function Login() {
     var res = await loginWithOtp({
       email: email,
       password: password,
-      otp: otp,
+      // otp: otp,
     });
     console.log(res);
     if (res.success) {
       alert("Success");
-      res.render("user/api/v1/librarian/bookIndex");
+      window.location.href='/user/bookIndex'
     }
     
     if (!res.success) {
@@ -101,7 +101,7 @@ function Login() {
                   id="otp"
 
                   placeholder="OTP"
-                  onChange={(e) => setOtp(e.target.value)}
+                  // onChange={(e) => setOtp(e.target.value)}
                 // required
                 />
               </div>

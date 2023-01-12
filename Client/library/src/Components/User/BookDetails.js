@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from 'react'
-import { useHistory } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom"
 
-// reactstrap components
+//reactstrap components
 import {
   MDBContainer,
   MDBRow,
@@ -17,31 +17,28 @@ import {
   MDBCardText,
   MDBInput
 } from "mdb-react-ui-kit";
-
 import { useParams } from "react-router-dom";
-import { getOneBookDetails, applyBook } from '../Services/BookApplyService';
-
-
+import { getOneBookDetails, applyBook } from '../../Services/BookApplyService';
 function ApplyBook() {
   const [orderFor, setOrderFor] = useState("1");
   const [contacts, setContacts] = useState({});
   const params = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
 
- async function saveBookRequest(e) {
+  async function saveBookRequest(e) {
     const result = await applyBook({
       userCategory: orderFor,
       bookId: params.id
     });
-    console.log("hii",result);
+    console.log(result);
     if (result.data.success) {
-    alert("Applied successfully");
-   
+      alert("Applied successfully");
+
     }
     else {
       alert(result.data.errors[0]);
     }
-    history.push('/admin/tables');
+    navigate('/user/myBook');
   }
 
   useEffect(() => {
@@ -65,11 +62,6 @@ function ApplyBook() {
           <MDBCardTitle>{contacts.bookname}</MDBCardTitle>
           <MDBCardText>
             <MDBRow className='mb-4'>
-              {/* <MDBCol>
-              <label>Issued Date</label>    
-              <input type='date' class="form-control" name='issuedDate' id='issuedDate' />
-            </MDBCol> */}
-
             </MDBRow>
             <MDBRow className='mb-4'>
               <label>For whom?</label>
